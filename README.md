@@ -23,7 +23,7 @@ rake reek:checkstyle  # Generate checkstyle XML for code smells analyzed by reek
 # customize
 
 Overwrite the formatter options in your `Rakefile`.
-E.g To map a smell to a different severitiy (default *warning*):
+E.g Map a smell to a different severity (default *warning*):
 
 ```ruby
 Reek::CheckstyleFormatter.rake_task_options = {
