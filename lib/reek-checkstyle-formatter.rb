@@ -19,7 +19,7 @@ class Reek::CheckstyleFormatter
   # @option opts [String] :glob_pattern Glob pattern (absolute path) for files to analyse
   # @option opts [String] :output File path for checkstyle xml output
   # @option opts [String] :smell_doc_url URL to code smell documentation (reek wiki)
-  # @option opts [Hash] :smell_severities Mapping of smell subclasses to checkstyle severity
+  # @option opts [Hash] :smell_severities Mapping of smell subclasses to [checkstyle severity](http://checkstyle.sourceforge.net/property_types.html#severity)
   def initialize(opts = {})
     @glob_pattern = opts[:glob_pattern]
     @output = opts[:output]
