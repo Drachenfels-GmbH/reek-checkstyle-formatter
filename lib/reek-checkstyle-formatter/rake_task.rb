@@ -13,6 +13,6 @@ namespace :reek do
       :glob_pattern => "#{Dir.pwd}/lib/**/*.rb",
       :output => "#{Dir.pwd}/reek_checkstyle.xml",
       :smell_doc_url => 'https://github.com/troessner/reek/wiki',
-    }).run
+    }.merge(Reek::CheckstyleFormatter.rake_task_options)).run
   end
 end

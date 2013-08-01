@@ -6,6 +6,13 @@ require 'pathname'
 class Reek::CheckstyleFormatter
   REXML_PRETTY_PRINT_INDENT = 0
 
+  class << self
+    attr_accessor :rake_task_options
+  end
+
+  # options that are used by the rake task to overwrite the default formatter options
+  @rake_task_options = {}
+
   attr_accessor :glob_pattern, :output, :smell_doc_url, :smell_severities
 
   # @param [Hash] opts
