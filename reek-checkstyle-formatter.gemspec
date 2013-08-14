@@ -22,7 +22,7 @@ s.add_development_dependency "rake"
 s.add_development_dependency "simplecov"
 s.add_development_dependency "simplecov-rcov"
 
-s.add_dependency 'reek'
+s.add_dependency 'reek',  '= 1.3.1'
 
 s
 
